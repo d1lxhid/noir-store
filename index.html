@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOIR — Objects with Intention</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header class="navbar">
+
+        <a href="#home" class="logo" data-link>
+            <span class="logo-symbol">N</span>
+            NOIR<span class="dot">.</span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="#home" data-link>Home</a>
+            <a href="#shop" data-link>Shop</a>
+            <a href="#journal" data-link>Journal</a>
+            <a href="#about" data-link>About</a>
+            <a href="#contact" data-link>Contact</a>
+        </nav>
+
+        <button class="cart-button" id="openCart">
+            Bag <span id="cartCount">0</span>
+        </button>
+
+    </header>
+
+
+    <!-- MAIN APP -->
+
+    <main id="app">
+
+        <!-- HOME -->
+
+        <section class="page active" id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    INDEPENDENT DESIGN STUDIO · 2026
+                </p>
+
+                <h1>
+                    Objects for<br>
+                    <em>everyday</em> rituals.
+                </h1>
+
+                <p class="hero-description">
+                    Thoughtful essentials, quiet details,
+                    and considered design for the way
+                    you live now.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#shop" data-link class="btn primary">
+                        Explore collection ↗
+                    </a>
+
+                    <a href="#about" data-link class="text-link">
+                        Our approach ↗
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-art">
+
+                <div class="orbit"></div>
+
+                <div class="hero-letter">
+                    N
+                </div>
+
+                <span class="art-label top">
+                    FORM / FUNCTION
+                </span>
+
+                <span class="art-label bottom">
+                    01 — 04
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- SHOP -->
+
+        <section class="page" id="shop">
+
+            <div class="section-header">
+
+                <div>
+                    <p class="eyebrow">THE COLLECTION</p>
+
+                    <h2>
+                        Selected <em>objects.</em>
+                    </h2>
+                </div>
+
+                <div class="tools">
+
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Search collection..."
+                    >
+
+                    <select id="sortProducts">
+                        <option value="featured">Featured</option>
+                        <option value="low">Price: Low to High</option>
+                        <option value="high">Price: High to Low</option>
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="filters">
+
+                <button class="filter active" data-category="all">
+                    All
+                </button>
+
+                <button class="filter" data-category="desk">
+                    Desk
+                </button>
+
+                <button class="filter" data-category="travel">
+                    Travel
+                </button>
+
+                <button class="filter" data-category="home">
+                    Home
+                </button>
+
+            </div>
+
+
+            <div id="productGrid" class="product-grid"></div>
+
+        </section>
+
+
+        <!-- JOURNAL -->
+
+        <section class="page" id="journal">
+
+            <p class="eyebrow">FIELD NOTES</p>
+
+            <h2>
+                Ideas worth<br>
+                <em>keeping.</em>
+            </h2>
+
+
+            <div class="journal-grid">
+
+                <article class="journal-card">
+                    <span>01 / DESIGN</span>
+                    <h3>The beauty of less</h3>
+                    <p>
+                        Why restraint can make everyday
+                        objects feel more personal.
+                    </p>
+                    <a href="#contact" data-link>Read the note ↗</a>
+                </article>
+
+                <article class="journal-card">
+                    <span>02 / LIFESTYLE</span>
+                    <h3>Make space for rituals</h3>
+                    <p>
+                        Small habits, better surroundings,
+                        and the objects between them.
+                    </p>
+                    <a href="#contact" data-link>Read the note ↗</a>
+                </article>
+
+                <article class="journal-card">
+                    <span>03 / PROCESS</span>
+                    <h3>Details are the design</h3>
+                    <p>
+                        A closer look at how we think
+                        about materials and function.
+                    </p>
+                    <a href="#contact" data-link>Read the note ↗</a>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section class="page" id="about">
+
+            <p class="eyebrow">THE NOIR STANDARD</p>
+
+            <div class="about-layout">
+
+                <h2>
+                    Good design<br>
+                    should feel<br>
+                    <em>inevitable.</em>
+                </h2>
+
+                <div class="about-text">
+
+                    <p class="lead">
+                        NOIR is an independent concept store
+                        for people who appreciate the
+                        considered side of everyday life.
+                    </p>
+
+                    <p>
+                        We choose useful things with character:
+                        honest materials, purposeful forms,
+                        and details that reward attention.
+                        No clutter. No unnecessary noise.
+                    </p>
+
+                    <div class="principles">
+                        <span>01 — Useful</span>
+                        <span>02 — Honest</span>
+                        <span>03 — Enduring</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section class="page" id="contact">
+
+            <p class="eyebrow">LET'S TALK</p>
+
+            <div class="contact-layout">
+
+                <div>
+
+                    <h2>
+                        Have a thought?<br>
+                        <em>Send it over.</em>
+                    </h2>
+
+                    <p>
+                        Questions, feedback, collaborations —
+                        we'd love to hear from you.
+                    </p>
+
+                    <p class="email">
+                        hello@noir.example
+                    </p>
+
+                </div>
+
+
+                <form id="contactForm">
+
+                    <input
+                        type="text"
+                        placeholder="Your name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        placeholder="Your email"
+                        required
+                    >
+
+                    <textarea
+                        rows="4"
+                        placeholder="Your message"
+                        required
+                    ></textarea>
+
+                    <button class="btn primary" type="submit">
+                        Send message ↗
+                    </button>
+
+                    <small id="formMessage"></small>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- SHOPPING CART -->
+
+    <aside class="cart-panel" id="cartPanel">
+
+        <div class="cart-header">
+
+            <h3>Your bag</h3>
+
+            <button id="closeCart">✕</button>
+
+        </div>
+
+        <div id="cartItems"></div>
+
+        <div class="cart-total">
+
+            <strong>
+                Total: ₹<span id="cartTotal">0</span>
+            </strong>
+
+            <button class="btn primary" id="checkoutButton">
+                Checkout ↗
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <div class="overlay" id="overlay"></div>
+
+
+    <footer>
+        © 2026 NOIR STUDIO — Designed with intention.
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
